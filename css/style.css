@@ -1,0 +1,269 @@
+@import url('./_vars.css');
+@import url('./_reset.css');
+@import url('./_base.css');
+@import url('./_section-cart.css');
+@import url('./');
+@import url('./');
+
+.block-title { 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 171% */
+    
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    
+    color: #151515;
+    
+    /* opacity: 0.7; */
+}
+/* HEADER */
+
+.container {
+    /* width: 1170px; */
+    /* margin: 0 auto; */
+    
+  }
+.header_container {
+    width: 1440px;
+    height: 69px;
+    
+}
+.header-menu {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    /* margin-bottom: 30px; */
+}
+.nav-menu {
+    display: flex;
+}
+.nav-menu__item {
+}
+.header-logo {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+}
+/* .header-line {
+    display: flex;
+    position: absolute;
+    height: 1px;
+    left: 0%;
+    right: 0%;
+    top: 85px;
+    background: #bebebe;
+    width: 64%;
+    margin: 0 auto
+} */
+
+ /* SECTION 1 */
+
+ .banner {
+}
+.section-banner {
+    width: 1410px;
+    height: 698px;
+    background: #151515;
+}
+.banner-title {
+    position: absolute;
+    width: 807px;
+    height: 77px;
+    left: calc(50% - 807px/2 - 0.5px);
+    top: 407.45px;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 38px;
+    /* or 142% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.benner-button {
+}
+
+ /* SECTION 2 */
+
+.advantages {
+    width: 1410px;
+    margin-bottom: 20px;
+}
+.section-advantages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 155px;
+    left: 0%;
+    right: 0%;
+    top: 698px;
+    /* margin: 0 50px; */
+    /* border: 1px solid; */
+    
+}
+.advantages-item {
+    display: flex;
+    width: 230px;
+    height: 155px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 27px; */
+}
+
+.advantages-item p {
+    height: 24px;
+    width: 130px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #000000;   
+}
+
+ /* SECTION 3 NABIS */
+
+ .nabis {
+    margin-bottom: 90px;
+    
+}
+.section-nabis {
+    display: flex;
+    margin-bottom: 30px;
+}
+.nabis-info {
+    margin: 0px 15px 30px 0px;
+    width: 550px;
+}
+.nabis-info p {
+    margin-bottom: 20px;
+}
+.nabis-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.nabis-structure {
+    margin-bottom: 10px;
+}
+.nabis-about {
+    margin-bottom: 20px;
+}
+.nabis-repertoire {
+    
+}
+.nabis-image {
+    width: 850px;
+
+}
+.nabis-line {
+    display: flex;
+    position: absolute;
+    height: 1px;
+    left: 0%;
+    right: 0%;
+    top: 1720px;
+    background: #bebebe;
+    /* width: 1410px; */
+    width: 64%;
+    margin: 0 auto;
+}
+
+ /* SECTION 3 BODY DANCE */
+
+.bodyDance {
+    margin-bottom: 70px;
+}
+.section-bodyDance {
+    display: flex;
+    margin-bottom: 30px;
+}
+.bodyDance-info {
+    margin: 0px 15px 30px 0px;
+    width: 550px;
+}
+.bodyDance-info p {
+    margin-bottom: 20px;
+}
+.bodyDance-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.bodyDance-about {
+    margin-bottom: 20px;
+}
+.bodyDance-structure {
+    margin-bottom: 10px;
+}
+.bodyDance-repertoire {
+}
+.bodyDance-image {
+    width: 850px;
+}
+.bodyDance-line {
+    display: flex;
+    position: absolute;
+    height: 1px;
+    left: 0%;
+    right: 0%;
+    top: 2390px;
+    background: #bebebe;
+    /* width: 1410px; */
+    width: 64%;
+    margin: 0 auto;
+}
+
+/* SECTION 4 THE HITS */
+
+.theHits {
+    margin-bottom: 90px;
+}
+.section-theHits {
+    display: flex;
+    margin-bottom: 30px;
+}
+.theHits-info {
+    margin: 0px 15px 30px 0px;
+    width: 550px;
+}
+.theHits-info p{
+    margin-bottom: 20px;
+}
+.theHits-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.theHits-about {
+    margin-bottom: 20px;
+}
+.theHits-structure {
+    margin-bottom: 10px;
+}
+.theHits-repertoire {
+}
+.theHits-image {
+    width: 850px;
+}
+.theHits-line {
+    display: flex;
+    position: absolute;
+    height: 1px;
+    left: 0%;
+    right: 0%;
+    top: 3070px;
+    background: #bebebe;
+    /* width: 1410px; */
+    width: 64%;
+    margin: 0 auto;
+}
