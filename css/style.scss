@@ -26,7 +26,7 @@
 }
 
 .header_container {
-  // width: 100%;
+  width: 100%;
   height: 69px;
 }
 
@@ -44,7 +44,7 @@
 
 .header-logo {
   font-weight: 400;
-  font-size: 44px;
+  font-size: clamp(1rem, 0.364rem + 3.18vw, 2.75rem);
   line-height: 40px;
   /* identical to box height, or 125% */
   letter-spacing: 4px;
@@ -73,8 +73,15 @@
   .header-logo {
     font-size: clamp(1.125rem, 0.594rem + 2.65vw, 2.75rem);
     text-align: center;
+     margin-bottom: 20px;
     // width: 100%;
-   
+
+  }
+  .advantages {
+    display: none;
+  }
+  .banner {
+    margin-bottom: 20px;
   }
   .nabis-image img {
     flex: 0 0 calc(500px / 1300px * 100%);
@@ -88,18 +95,20 @@
 }
 @media screen and (max-width: 455px) {
   .header-logo {
-    font-size: clamp(1.125rem, 0.594rem + 2.65vw, 2.75rem);
     text-align: center;
-    white-space: pre;
-    // width: 100%;
-  
+    // white-space: pre;
+    // max-width: 455px;
+    p {
+      font-size: clamp(0.875rem, 0.193rem + 3.41vw, 2.75rem);
+      align-items: center;
+    } 
+  }
   .nabis-image {
-    img { width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);};
-
+    img { width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
+    }
   }
   .nabis-about {
     flex: 0 0 calc(500px / 1300px * 100%);
-
   }
 }
 /* SECTION 1 */
@@ -108,20 +117,19 @@
   flex-direction: column;
   // width: 100%;
   align-items: center;
-  height: 500px;
+  min-height: 300px;
   background: rgb(131, 58, 180);
   background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
 }
 
 .banner-title h1 {
   font-weight: 700;
-  // font-size: clamp(2.5rem, 1.929rem + 2.86vw, 4.25rem);
+  font-size: clamp(1.125rem, 0.534rem + 2.95vw, 2.75rem);
   line-height: 64px;
   text-align: center;
   letter-spacing: 0.2px;
   text-transform: uppercase;
-  color: #FFFFFF;              /* 2 */
-  transform: translate(0, 120%)
+  color: #FFFFFF;
 }
 
 /* SECTION 2 */
@@ -147,7 +155,7 @@
 
 .advantages-item {
   display: flex;
-  width: 230px;
+  max-width: 230px;
   height: 155px;
   gap: 15px;
   align-items: center;
@@ -157,7 +165,7 @@
 
 .advantages-item p {
   height: 24px;
-  width: 130px;
+  max-width: 130px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -179,7 +187,7 @@
 }
 .nabis-info {
   margin: 0px 15px 0px 0px;
-  width: 550px;
+  max-width: 550px;
 }
 .nabis-info p {
   margin-bottom: 20px;
@@ -206,7 +214,7 @@
 }
 
 .nabis-image {
-  width: 706px;
+  max-width: 706px;
 }
 
 .nabis-line {
@@ -275,7 +283,7 @@
 
 .bodyDance-info {
   margin: 0px 15px 30px 0px;
-  width: 550px;
+  max-width: 550px;
 }
 
 .bodyDance-info p {
@@ -301,8 +309,8 @@
   margin-bottom: 10px;
 }
 
-.bodyDance-image {
-  width: 850px;
+.bodyDance-image img {
+  width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
 }
 
 .bodyDance-line {
@@ -343,17 +351,16 @@
   }
   
   .bodyDance-image {
-    img { width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);};
-
+    img { width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem)
+    }
   }
   .bodyDance-about {
     flex: 0 0 calc(500px / 1300px * 100%);
-
   }
 }
 /* BODYDANCE SLIDER */
 .bodyDance-slider {
-  // width: 100%;
+  width: 100%;
   height: 500px;
 }
 
@@ -368,7 +375,7 @@
 
 .theHits-info {
   margin: 0px 15px 0px 0px;
-  width: 550px;
+  max-width: 550px;
 }
 
 .theHits-info p {
@@ -394,7 +401,7 @@
 }
 
 .theHits-image {
-  width: 850px;
+  max-width: 850px;
 }
 
 .theHits-line {
@@ -426,32 +433,62 @@
     // width: 100%;
   }
 }
-@media screen and (max-width: 575px) {
-  .section-theHits {
-    flex-direction: column;
-    text-align: center;
-    // width: 100%;
-    align-items: center;
-  }
+// @media screen and (max-width: 575px) {
+//   .section-theHits {
+//     flex-direction: column;
+//     text-align: center;
+//     // width: 100%;
+//     align-items: center;
+//   }
   
-  .theHits-image {
-    img { width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);};
+//   .theHits-image {
+//     img { 
+//       width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
+//     }
 
-  }
-  .theHits-about {
-    flex: 0 0 calc(500px / 1300px * 100%);
+//   }
+//   .theHits-about {
+//     flex: 0 0 calc(500px / 1300px * 100%);
 
-  }
-}
+//   }
+// }
 /* theHits SLIDER */
 .theHits-slider {
-  // width: 100%;
+  width: 100%;
   height: 500px;
 }
+.footer-group {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 140px; 
+}
 
+.footer-line {
+  display: flex;
+  position: absolute;
+  height: 2px;
+  left: 0%;
+  right: 0%;
+  background: #FBD784;
+  width: 68%;
+  // margin: 0 auto;
+  margin-left:auto;
+  margin-right:auto;
+}
+.footer-title { 
+  padding-top: 15px;
+  font-size: 34px;
+}
+.footer-info {
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+}
+.footer-year {
+}
 
 .swiper {
-  // width: 100%;
+  width: 100%;
   height: 500px;
   padding: 0 15px;
 }
@@ -483,69 +520,9 @@
   object-fit: cover;
 }
 
-.footer {
-  height: 70px;
+@media screen and (max-width: 980px) {
+  .section-bigHit, .section-theHits, .section-bodyDance, .section-nabis, .section-theClaps {
+  display: flex;
+  flex-direction: column;
+  } 
 }
-// MOBILE 
-
-// @media screen and (max-width: 520px) {
-//   .container {
-//     min-width: 519px;
-//   }
-//   .header-logo p {
-//     font-weight: 400;
-//     font-size: 24px;
-//     line-height: 20px;
-//     /* identical to box height, or 125% */
-//     letter-spacing: 4px;
-//     color: #0f0d0d;
-//     align-items: center;
-//     text-align: center;
-//   }
-//   .section-banner {
-//     max-height: 350px;
-//     max-width: 100%;
-//     // margin: 0 auto;
-//     // padding: 0;
-//     align-items: center;
-//   }
-//   .banner-title {
-    
-
-//   }
-//   .banner-title h1{
-//     font-weight: 700;
-//     font-size: 22px;
-//     line-height: 64px;
-//     text-align: center;
-//     letter-spacing: 0.2px;
-//     text-transform: uppercase;
-//     color: #FFFFFF;
-    
-//   }
-
-//   .advantages {
-//     display: none;
-//   }
-// }
-// @media screen and (max-width: 520px) {
-//   .container {
-//     width: 500px;
-//   }
-//   .section-nabis {
-//     flex-direction: column;
-//     margin-top: 20px;
-//   }
-//   .nabis-image img {
-//     max-width: 500px;
-//   }
-//   .swiper .mySwiper {
-//     max-width: 500px;
-//     flex-direction: column;
-//   }
-//   .nabis-slider, .swiper-wrapper {
-//     width: 500px;
-//     height: 500px;
-//     padding: 0 15px;
-//   }
-// }

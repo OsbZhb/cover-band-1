@@ -17,6 +17,7 @@
 
 /* HEADER */
 .header_container {
+  width: 100%;
   height: 69px;
 }
 
@@ -34,7 +35,7 @@
 
 .header-logo {
   font-weight: 400;
-  font-size: 44px;
+  font-size: clamp(1rem, 0.364rem + 3.18vw, 2.75rem);
   line-height: 40px;
   /* identical to box height, or 125% */
   letter-spacing: 4px;
@@ -59,6 +60,13 @@
   .header-logo {
     font-size: clamp(1.125rem, 0.594rem + 2.65vw, 2.75rem);
     text-align: center;
+    margin-bottom: 20px;
+  }
+  .advantages {
+    display: none;
+  }
+  .banner {
+    margin-bottom: 20px;
   }
   .nabis-image img {
     flex: 0 0 38.4615384615%;
@@ -67,10 +75,12 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 725px) {
-  .section-nabis {
-    flex-direction: column;
+@media screen and (max-width: 455px) {
+  .header-logo {
     text-align: center;
+  }
+  .header-logo p {
+    font-size: clamp(0.875rem, 0.193rem + 3.41vw, 2.75rem);
     align-items: center;
   }
   .nabis-image img {
@@ -82,24 +92,22 @@
 }
 /* SECTION 1 */
 .section-banner {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 500px;
+  min-height: 300px;
   background: rgb(131, 58, 180);
   background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
 }
 
 .banner-title h1 {
-  align-items: center;
   font-weight: 700;
-  font-size: clamp(2.5rem, 1.929rem + 2.86vw, 4.25rem);
+  font-size: clamp(1.125rem, 0.534rem + 2.95vw, 2.75rem);
   line-height: 64px;
   text-align: center;
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin: 0; /* 2 */
-  top: 50%; /* 3 */
-  transform: translate(0, 120%);
 }
 
 /* SECTION 2 */
@@ -123,7 +131,7 @@
 
 .advantages-item {
   display: flex;
-  width: 230px;
+  max-width: 230px;
   height: 155px;
   gap: 15px;
   align-items: center;
@@ -133,7 +141,7 @@
 
 .advantages-item p {
   height: 24px;
-  width: 130px;
+  max-width: 130px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -152,7 +160,7 @@
 
 .nabis-info {
   margin: 0px 15px 0px 0px;
-  width: 550px;
+  max-width: 550px;
 }
 
 .nabis-info p {
@@ -180,7 +188,7 @@
 }
 
 .nabis-image {
-  width: 706px;
+  max-width: 706px;
 }
 
 .nabis-line {
@@ -239,7 +247,7 @@
 
 .bodyDance-info {
   margin: 0px 15px 30px 0px;
-  width: 550px;
+  max-width: 550px;
 }
 
 .bodyDance-info p {
@@ -265,8 +273,8 @@
   margin-bottom: 10px;
 }
 
-.bodyDance-image {
-  width: 850px;
+.bodyDance-image img {
+  width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
 }
 
 .bodyDance-line {
@@ -310,6 +318,7 @@
 }
 /* BODYDANCE SLIDER */
 .bodyDance-slider {
+  width: 100%;
   height: 500px;
 }
 
@@ -324,7 +333,7 @@
 
 .theHits-info {
   margin: 0px 15px 0px 0px;
-  width: 550px;
+  max-width: 550px;
 }
 
 .theHits-info p {
@@ -351,7 +360,7 @@
 }
 
 .theHits-image {
-  width: 850px;
+  max-width: 850px;
 }
 
 .theHits-line {
@@ -380,25 +389,43 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 575px) {
-  .section-theHits {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  .theHits-image img {
-    width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
-  }
-  .theHits-about {
-    flex: 0 0 38.4615384615%;
-  }
-}
 /* theHits SLIDER */
 .theHits-slider {
+  width: 100%;
   height: 500px;
 }
 
+.footer-group {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 140px;
+}
+
+.footer-line {
+  display: flex;
+  position: absolute;
+  height: 2px;
+  left: 0%;
+  right: 0%;
+  background: #FBD784;
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-title {
+  padding-top: 15px;
+  font-size: 34px;
+}
+
+.footer-info {
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+}
+
 .swiper {
+  width: 100%;
   height: 500px;
   padding: 0 15px;
 }
@@ -421,6 +448,9 @@
      object-fit: cover;
 }
 
-.footer {
-  height: 70px;
+@media screen and (max-width: 980px) {
+  .section-bigHit, .section-theHits, .section-bodyDance, .section-nabis, .section-theClaps {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
