@@ -16,13 +16,7 @@
 }
 
 /* HEADER */
-.container {
-  /* width: 1170px; */
-  /* margin: 0 auto; */
-}
-
 .header_container {
-  width: 1440px;
   height: 69px;
 }
 
@@ -56,38 +50,63 @@
   right: 0%;
   top: 85px;
   background: #bebebe;
-  width: 64%;
-  margin: 0 auto;
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+@media screen and (max-width: 960px) {
+  .header-logo {
+    font-size: clamp(1.125rem, 0.594rem + 2.65vw, 2.75rem);
+    text-align: center;
+  }
+  .nabis-image img {
+    flex: 0 0 38.4615384615%;
+  }
+  .nabis-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 725px) {
+  .section-nabis {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .nabis-image img {
+    width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
+  }
+  .nabis-about {
+    flex: 0 0 38.4615384615%;
+  }
+}
 /* SECTION 1 */
 .section-banner {
-  width: 1410px;
-  height: 698px;
+  align-items: center;
+  height: 500px;
   background: rgb(131, 58, 180);
   background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
 }
 
-.banner-title {
-  position: absolute;
-  width: 1000px;
-  height: 77px;
-  left: calc(50% - 500px - 0.5px);
-  top: 360.45px;
+.banner-title h1 {
+  align-items: center;
   font-weight: 700;
-  font-size: 44px;
+  font-size: clamp(2.5rem, 1.929rem + 2.86vw, 4.25rem);
   line-height: 64px;
-  /* or 142% */
   text-align: center;
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0; /* 2 */
+  top: 50%; /* 3 */
+  transform: translate(0, 120%);
 }
 
 /* SECTION 2 */
 .advantages {
-  width: 1410px;
   margin-bottom: 20px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .section-advantages {
@@ -132,7 +151,7 @@
 }
 
 .nabis-info {
-  margin: 0px 15px 30px 0px;
+  margin: 0px 15px 0px 0px;
   width: 550px;
 }
 
@@ -142,6 +161,7 @@
 
 .nabis-info ul, li {
   margin: 10px 0 10px 0px;
+  font-size: 18px;
 }
 
 .nabis-title h2 {
@@ -160,7 +180,7 @@
 }
 
 .nabis-image {
-  width: 850px;
+  width: 706px;
 }
 
 .nabis-line {
@@ -176,9 +196,34 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 960px) {
+  .section-nabis {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .nabis-image img {
+    flex: 0 0 38.4615384615%;
+  }
+  .nabis-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 725px) {
+  .section-nabis {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .nabis-image img {
+    width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
+  }
+  .nabis-about {
+    flex: 0 0 38.4615384615%;
+  }
+}
 /* NABIS SLIDER */
 .nabis-slider {
-  width: 1410px;
   height: 500px;
 }
 
@@ -237,9 +282,34 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 875px) {
+  .section-bodyDance {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .bodyDance-image img {
+    flex: 0 0 34.6153846154%;
+  }
+  .bodyDance-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .bodyDance-nabis {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .bodyDance-image img {
+    width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
+  }
+  .bodyDance-about {
+    flex: 0 0 38.4615384615%;
+  }
+}
 /* BODYDANCE SLIDER */
 .bodyDance-slider {
-  width: 1410px;
   height: 500px;
 }
 
@@ -297,15 +367,40 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 875px) {
+  .section-theHits {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .theHits-image img {
+    flex: 0 0 34.6153846154%;
+  }
+  .theHits-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .section-theHits {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .theHits-image img {
+    width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
+  }
+  .theHits-about {
+    flex: 0 0 38.4615384615%;
+  }
+}
 /* theHits SLIDER */
 .theHits-slider {
-  width: 1410px;
   height: 500px;
 }
 
 .swiper {
-  width: 1410px;
   height: 500px;
+  padding: 0 15px;
 }
 
 .swiper-slide {
@@ -326,55 +421,6 @@
      object-fit: cover;
 }
 
-@media screen and (max-width: 520px) {
-  .container {
-    min-width: 519px;
-  }
-  .header-logo p {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 20px;
-    /* identical to box height, or 125% */
-    letter-spacing: 4px;
-    color: #0f0d0d;
-    align-items: center;
-    text-align: center;
-  }
-  .section-banner {
-    max-height: 350px;
-    max-width: 100%;
-    align-items: center;
-  }
-  .banner-title h1 {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 64px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-  .advantages {
-    display: none;
-  }
-}
-@media screen and (max-width: 520px) {
-  .container {
-    width: 500px;
-  }
-  .section-nabis {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  .nabis-image img {
-    max-width: 500px;
-  }
-  .swiper .mySwiper {
-    max-width: 500px;
-    flex-direction: column;
-  }
-  .nabis-slider, .swiper-wrapper {
-    width: 500px;
-    height: 500px;
-  }
+.footer {
+  height: 70px;
 }/*# sourceMappingURL=style.css.map */
