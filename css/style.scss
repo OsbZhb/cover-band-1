@@ -112,6 +112,11 @@
   }
 }
 /* SECTION 1 */
+
+.banner {
+  align-items: center;
+  
+}
 .section-banner {
   display: flex;
   flex-direction: column;
@@ -120,6 +125,7 @@
   min-height: 300px;
   background: rgb(131, 58, 180);
   background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+  
 }
 
 .banner-title h1 {
@@ -130,6 +136,8 @@
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: #FFFFFF;
+  transform: translateY(35%);
+  padding: 0 5px;
 }
 
 /* SECTION 2 */
