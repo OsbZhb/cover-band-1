@@ -155,6 +155,91 @@
   color: #000000;
 }
 
+.bigHit {
+  margin-bottom: 80px;
+}
+
+.section-bigHit {
+  display: flex;
+}
+
+.bigHit-info {
+  margin: 0px 15px 0px 0px;
+  max-width: 550px;
+}
+
+.bigHit-info p {
+  margin-bottom: 20px;
+}
+
+.bigHit-info ul, li {
+  margin: 10px 0 10px 0px;
+  font-size: 18px;
+}
+
+.bigHit-title h2 {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.bigHit-structure {
+  margin-bottom: 10px;
+}
+
+.bigHit-about {
+  margin-bottom: 20px;
+}
+
+.bigHit-image {
+  max-width: 706px;
+}
+
+.bigHit-line {
+  display: flex;
+  position: relative;
+  height: 1px;
+  left: 0%;
+  right: 0%;
+  top: 530px;
+  background: #bebebe;
+  /* width: 1410px; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .section-bigHit {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .bigHit-image img {
+    flex: 0 0 38.4615384615%;
+  }
+  .bigHit-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 725px) {
+  .section-bigHit {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .bigHit-image img {
+    width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
+  }
+  .bigHit-about {
+    flex: 0 0 38.4615384615%;
+  }
+}
+/* NABIS SLIDER */
+.theClaps-slider {
+  height: 500px;
+}
+
 /* SECTION 3 NABIS */
 .nabis {
   margin-bottom: 80px;
@@ -398,6 +483,91 @@
 /* theHits SLIDER */
 .theHits-slider {
   width: 100%;
+  height: 500px;
+}
+
+.theClaps {
+  margin-bottom: 80px;
+}
+
+.section-theClaps {
+  display: flex;
+}
+
+.theClaps-info {
+  margin: 0px 15px 0px 0px;
+  max-width: 550px;
+}
+
+.theClaps-info p {
+  margin-bottom: 20px;
+}
+
+.theClaps-info ul, li {
+  margin: 10px 0 10px 0px;
+  font-size: 18px;
+}
+
+.theClaps-title h2 {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.theClaps-structure {
+  margin-bottom: 10px;
+}
+
+.theClaps-about {
+  margin-bottom: 20px;
+}
+
+.theClaps-image {
+  max-width: 706px;
+}
+
+.theClaps-line {
+  display: flex;
+  position: relative;
+  height: 1px;
+  left: 0%;
+  right: 0%;
+  top: 530px;
+  background: #bebebe;
+  /* width: 1410px; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .section-theClaps {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .theClaps-image img {
+    flex: 0 0 38.4615384615%;
+  }
+  .theClaps-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 725px) {
+  .section-theClaps {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .theClaps-image img {
+    width: clamp(21.875rem, 11.671rem + 51.02vw, 53.125rem);
+  }
+  .theClaps-about {
+    flex: 0 0 38.4615384615%;
+  }
+}
+/* NABIS SLIDER */
+.theClaps-slider {
   height: 500px;
 }
 
